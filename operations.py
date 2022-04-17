@@ -7,14 +7,11 @@ from validators import Validators
 class Operations:
 
     def __init__(self, username, data, eur_pln, usd_pln, usd_eur, commission):
-        # self.user_id = user_id
-        # self.account_type = account_type
         self.eur_pln = eur_pln
         self.usd_pln = usd_pln
         self.usd_eur = usd_eur
         self.commission = commission
         self.users_db = db.getDb("users.json")
-        # self.data = self.users_db.getByQuery({"name": username})
         self.data = data
         self.validators = Validators()
         self.history = History(self.data, self.users_db)

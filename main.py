@@ -23,7 +23,6 @@ if data:
         quit()
 else:
     new_account_decision = input("No account found. Would you like to create one? (yes/no) ").lower()
-    # TODO: move code below to account.py
     if new_account_decision == "yes":
         password = input("Enter password: ")
         user = {"name": username, "password": password, "pln": 0, "eur": 0, "usd": 0, "history": []}
